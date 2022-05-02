@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>zufallszahl</title>
+    <title>schätzkönig</title>
     <script src="main.js"></script>
 </head>
 <body>
@@ -11,15 +11,16 @@
 <h2>Wird die nächste Zahl höher oder niedriger als die vorherige??? <br>
 Alle zahlen liegen zwischen 0 und 100. Wirst du richtig liegen? <br>
 Die Anfangszahl ist 50!</h2>
-<p> Du hast bisher ... mal richtig gelegen.</p>
 <!-- FAB button -->
-<button class="mdl-button mdl-js-button mdl-button--fab">
+<button onclick="höher()" class="mdl-button mdl-js-button mdl-button--fab">
     <i class="material-icons">höher</i>
 </button>
 <!-- FAB button -->
-<button class="mdl-button mdl-js-button mdl-button--fab">
+<button onclick="tiefer()" class="mdl-button mdl-js-button mdl-button--fab">
     <i class="material-icons">tiefer</i>
 </button>
-
+<p id = "tf1"></p>
+<p>Du lagst bis jetzt</p> <p id = "tf2">
+    <p> mal richtig!</p>
 </body>
 </html>
