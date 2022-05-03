@@ -1,5 +1,4 @@
 let zufallzahl1
-let zufallszahl2
 let winstreak = 0
 let startwert = 50
 
@@ -8,7 +7,7 @@ function höher(){
     if(zufallzahl1 > startwert) {
         document.getElementById("tf1").innerHTML = "Super, das war korrekt!"
         console.log("Richtig.")
-        winstreak += 1
+        winstreak = winstreak + 1
 
         document.getElementById("tf2").innerHTML = winstreak
     } else {
@@ -17,6 +16,7 @@ function höher(){
         document.getElementById("tf2").innerHTML = winstreak
 
     }
+    startwert = Math.round(Math.random()*100)
 }
 
 function tiefer(){
@@ -24,11 +24,12 @@ function tiefer(){
     if(zufallzahl1 < startwert) {
         document.getElementById("tf1").innerHTML = "Super, das war korrekt!"
         console.log("Richtig.")
-        winstreak += 1
+        winstreak = winstreak + 1
         document.getElementById("tf2").innerHTML = winstreak
     } else {
         document.getElementById("tf1").innerHTML = "Schade! Du musst bei 0 anfangen :("
         winstreak = 0
         document.getElementById("tf2").innerHTML = winstreak
     }
+    startwert = Math.round(Math.random()*100)
 }
